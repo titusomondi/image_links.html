@@ -1,7 +1,10 @@
 {
-    "rewrites":[
-        {
-           "source":"/(.*)","destination":"/" 
-        }
+    "version": 2,
+    "builds": [
+      {
+        "src": "image_links.html",
+        "use": "@vercel/static-build"
+      }
     ]
-}
+  }
+  
