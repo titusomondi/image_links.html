@@ -9,8 +9,20 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background-color: #333; /* Set initial background color to dark */
+            animation: gradientFade 10s infinite alternate; /* Apply animation */
         }
+        
+        /* Animation for gradient fade */
+        @keyframes gradientFade {
+            0% {
+                background-color: #333; /* Dark background at the start */
+            }
+            100% {
+                background-color: #f2f2f2; /* Light background at the end */
+            }
+        }
+
         header, nav, section, footer {
             padding: 20px;
             background-color: #333;
